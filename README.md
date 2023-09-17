@@ -1,4 +1,4 @@
-===Proposed Amstrad HAL/PAL Replacement
+### Proposed Amstrad HAL/PAL Replacement
 
 
 This is *prototype* design for a replacement for the HAL/PAL memory manager in an Amstrad CPC6128.
@@ -28,7 +28,7 @@ Files included:
 * GreenHALTests.txt - Results of the same tests run against the GreenHAL design.
 * DIPDapter (folder) - The design for an adapter PCB between the -DIP variant of the chip and the Amstrad HAL socket.
 
-==Chip Programming with a Dev Board
+## Chip Programming with a Dev Board
 1) Open the appropriate .gp6 file with the Go COnfigure software
 2) Insert the chip (and adapter if needed) into the Dev Board.
 3) Plug the Dev Board into your computer (via USB).
@@ -36,7 +36,7 @@ Files included:
 5) Click Change Platform and select your model of Dev Board.
 6) Click the Program button/dropdown. This should now program your chip and give a confirmation message.
 
-==Chip Programming via I2C (without a Dev Board)
+## Chip Programming via I2C (without a Dev Board)
 As mentioned the necessary software etc for this has not been developed yet. If you want to try yourself these are the steps you'll need to go through:
 
 For this you'll need a suitable microcontroller with I2C outputs.
@@ -50,7 +50,7 @@ And finally you can get the microcontroller to send the data to the IC. :phew:
 
 The DIPDapter board included with the project includes a header for the SDA, SCL and ground pins.
 
-==Chip Programming via I2C (with a Dev Board)
+## Chip Programming via I2C (with a Dev Board)
 The Go Configure software can also program a chip via I2C using the Dev Board. This may be useful where a chip has been soldered in place.
 
 To do this follow the steps under Chip Porgramming with a Dev Board except:
@@ -59,6 +59,7 @@ You will need to connect the power, ground, SDA and SCL pins of the chip to the 
 Follow the notes under Chip Programming via I2C (without a dev board) with regards to configuring an I2C address for the chip. I.e. connect pins to 5v/ground as needed for an unprogrammed chip. For a previously programmed chip the on chip address will be used instead.
 
 I the Debugging Controls of the Go Configure software find the Device setting and change from Onboard to the I2C device address. Either as configure on the pins (for an unprogrammed device) or '0001' for a previously programmed device.
+
 
 © Mike Sutton, 2023
 Licence: CERN-OHL-P-2.0
